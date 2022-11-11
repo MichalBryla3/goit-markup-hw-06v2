@@ -504,7 +504,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer__container--right">
+        <div class="footer__container--middle">
           <h3 class="footer__title--social">Dołącz do nas</h3>
           <div class="footer__social">
             <a href="#"
@@ -546,6 +546,29 @@
             ></a>
           </div>
         </div>
+        <div class="footer__container--right">
+          <h4 class="footer__newsletter">Zapisz się do newslettera</h4>
+          <form class="footer__form">
+            <label
+              ><input
+                class="footer__placeholder"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button class="footer__btn" type="submit">
+              Zapisz się<svg class="footer__send-icon" id="icon-send">
+                <use
+                  xlink:href="./images/icons.svg#icon-send"
+                  width="24px"
+                  height="24px"
+                ></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -562,6 +585,76 @@
               ></use>
             </svg>
           </button>
+          <form class="form">
+            <h3 class="form__title-main">
+              Zostaw swoje dane w formularzu poniżej
+            </h3>
+            <label for="name"
+              ><h4 class="form__title">Imię</h4>
+              <svg class="form__icon1" id="icon-user">
+                <use
+                  xlink:href="./images/icons.svg#icon-user"
+                  width="12px"
+                  height="12px"
+                ></use>
+              </svg>
+              <input class="form__input" required
+            /></label>
+            <label for="phone"
+              ><h4 class="form__title">Telefon</h4>
+              <svg class="form__icon2" id="icon-phone">
+                <use
+                  xlink:href="./images/icons.svg#icon-phone"
+                  width="13px"
+                  height="13px"
+                ></use>
+              </svg>
+              <input
+                class="form__input"
+                type="tel"
+                name="phone_number"
+                required
+            /></label>
+            <label for="user_email"
+              ><h4 class="form__title">Email</h4>
+              <svg class="form__icon3" id="icon-envelope-fill">
+                <use
+                  xlink:href="./images/icons.svg#icon-envelope-fill"
+                  width="15px"
+                  height="12px"
+                ></use>
+              </svg>
+              <input class="form__input" type="email" name="email" required
+            /></label>
+            <label
+              ><h4 class="form__title">Komentarz</h4>
+              <textarea
+                class="form__textarea"
+                name="feedback"
+                rows="8"
+                placeholder="Wprowadź tekst"
+              >
+              </textarea>
+            </label>
+            <label class="form__checkbox">
+              <input
+                class="form__checkbox--icon visually-hidden"
+                type="checkbox"
+                name="policy"
+                value="rules"
+                required
+              />
+              <span class="form__checkbox--description"
+                >Oświadzam iż akceptuje&nbsp;
+                <a class="form__checkbox--color" href="#">Regulamin</a>
+                &nbsp;i&nbsp;
+                <a class="form__checkbox--color" href="#"
+                  >Politykę Prywatności.</a
+                ></span
+              >
+            </label>
+            <button class="form__btn" type="submit">Wyślij</button>
+          </form>
         </div>
       </div>
     </section>
