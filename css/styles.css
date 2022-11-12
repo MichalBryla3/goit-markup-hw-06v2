@@ -253,6 +253,7 @@ body {
   background-color: var(--third-color);
   color: var(--primary-color);
   fill: var(--primary-color);
+  border: 1px solid var(--primary-color);
   transition: transform 250ms var(--transition);
 }
 
@@ -305,6 +306,8 @@ body {
 .slider__btn:hover {
   background-color: var(--third-color);
   color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  transition: transform 250ms var(--transition);
 }
 
 .slider__title {
@@ -520,6 +523,12 @@ body {
   padding: 9px;
   background-color: var(--color-button-close);
 }
+.modal__btn:hover,
+.modal__btn:focus {
+  border: 1px solid red;
+  fill: red;
+  transition: transform 250ms var(--transition);
+}
 .modal__btn--size {
   height: 30px;
   width: 30px;
@@ -587,6 +596,7 @@ body {
 }
 .form label:focus-within {
   fill: var(--primary-color);
+  transition: transform 250ms var(--transition);
 }
 .form input:active,
 .form input:focus,
@@ -594,6 +604,7 @@ body {
 .form textarea:active {
   border: 1px solid var(--primary-color);
   outline: none;
+  transition: transform 250ms var(--transition);
 }
 
 .form__checkbox {
@@ -604,6 +615,10 @@ body {
 .form__checkbox--color {
   color: var(--primary-color);
   text-decoration: underline;
+}
+.form__checkbox--color:hover,
+.form__checkbox--color:focus {
+  color: aqua;
 }
 
 .form__checkbox--description {
@@ -658,6 +673,14 @@ body {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
+}
+
+.form__btn:hover,
+.form__btn:focus {
+  border: 1px solid var(--primary-color);
+  background-color: var(--third-color);
+  color: var(--primary-color);
+  transition: transform 250ms var(--transition);
 }
 
 /* -------------FILTERS------------- */
