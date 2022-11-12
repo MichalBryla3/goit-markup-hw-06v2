@@ -681,6 +681,7 @@ body {
   background-color: var(--third-color);
   color: var(--primary-color);
   transition: transform 250ms var(--transition);
+  cursor: pointer;
 }
 
 /* -------------FILTERS------------- */
